@@ -26,6 +26,8 @@ def recommend(movie):
 movies = pickle.load(open('models/movies.pkl', 'rb'))
 similarity = pickle.load(open('models/reduced_similarity.pkl', 'rb'))
 
+st.set_page_config(page_title="Movie Recommender System")
+
 st.title('Movie Recommender System')
 
 selected_movie_name = st.selectbox(
